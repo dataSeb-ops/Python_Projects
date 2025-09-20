@@ -79,6 +79,7 @@ This makes it a promising category for developers seeking cross-platform success
    ```bash
    git clone https://github.com/dataSeb-ops/Python_Projects.git
    cd mobile-app-analysis
+   
 2. To run the analysis, either
    - Open *mobile_app_analysis.ipynb* in Jupyter and run all cells, **OR**
    - Execute the Python script *mobile_app_analysis.py* using your preferred method
