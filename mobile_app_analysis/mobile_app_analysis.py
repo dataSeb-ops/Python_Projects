@@ -7,7 +7,7 @@
 # 
 # ## Setting up and exploring data
 
-# In[1]:
+# In[15]:
 
 
 # FUNCTIONS FOR ACCESSING/VIEWING DATA
@@ -37,7 +37,7 @@ def explore_data(dataset, start, end, rows_and_columns=False):
         print('Number of columns:', len(dataset[0]))
 
 
-# In[2]:
+# In[16]:
 
 
 # EXPLORE DATA
@@ -60,7 +60,7 @@ explore_data(ggle_data, 1, 1, True)
 # ## Data cleaning
 # ### Removing entries with missing information
 
-# In[3]:
+# In[17]:
 
 
 # DATA CLEANING
@@ -74,7 +74,7 @@ print(ggle_data[10472])
 # The Google Play dataset has duplicate entries for some apps, so we need to remove these.
 # Let's examine some of the duplicates:
 
-# In[4]:
+# In[18]:
 
 
 # record which apps have duplicate entries
@@ -97,7 +97,7 @@ print('Examples of apps with duplicates: ', dup_apps[:10])
 # 
 # First we'll create a dictionary to **store the highest number of reviews for each app.**
 
-# In[5]:
+# In[19]:
 
 
 # record highest number of reviews for each app
@@ -121,7 +121,7 @@ for app in ggle_data:
 # 
 # To do this, we'll cycle through the Google dataset and see if the entry has the max number of reviews for that app. If it does, then we'll **add it to our cleaned dataset, and then record that we've added it**.
 
-# In[6]:
+# In[20]:
 
 
 # create dataset with no duplicate app entries
@@ -151,7 +151,7 @@ print('\nActual number of rows: ', len(android_clean))
 # 
 # However, some English app names have emojis or trademark symbols, which have ASCII values greater than 127. If we exclude these app, then we will lose a lot of valuable data. Therefore, our code should check if the app name has **more than 3 characters whose ASCII value is greater than 127.**
 
-# In[7]:
+# In[21]:
 
 
 # Function to check if string is in English
@@ -179,7 +179,7 @@ print(isEnglish('爱奇艺PPS -《欢乐颂2》电视剧热播'))
 # 
 # Now we'll remove the non-English apps from our dataset.
 
-# In[8]:
+# In[22]:
 
 
 # new list to store only English apps
@@ -201,7 +201,7 @@ print('\nNumber of English apps: ', len(android_english))
 # 
 # We'll do this by checking if the price of the app is equal to 0.
 
-# In[9]:
+# In[23]:
 
 
 # for each English app, if price is 0, add to new dataset
@@ -229,7 +229,7 @@ print('\nNumber of free English apps: ', len(android_freeEng))
 # 
 # ### Most common app genres
 
-# In[10]:
+# In[24]:
 
 
 # function to generate frequency tables for any dataset
@@ -280,7 +280,7 @@ display_table(apple_data, 12) # ft for prime_genre column in App Store data
 # ### Most popular app genres
 # The analysis in the previous section tells us how *common* each genre is, but we want to know how *popular* each genre is so that we can ***select an app genre that will be popular on both platforms***. To do this, we'll **calculate the average number of installs for each app genre.** (The Google Play dataset provides this information, but the App Store dataset does not. Instead, we can use the the total number of user ratings as a proxy for number of installs.
 
-# In[11]:
+# In[25]:
 
 
 # proxy avg num installs by avg num of reviews for Apple dataset
@@ -316,7 +316,7 @@ for genre in apple_genre_avgReviews_sorted:
             
 
 
-# In[12]:
+# In[26]:
 
 
 # avg num of installs per app for Google Play dataset
@@ -358,7 +358,7 @@ for genre in ggle_genre_avgInstalls_sorted:
 # ### Comparison between genre popularity across platforms
 # Now that we have the genres sorted by most popular, let's compare the top ten genres for each platform.
 
-# In[13]:
+# In[27]:
 
 
 dict1 = {f"A{i}": i for i in range(1, 21)}
@@ -384,15 +384,11 @@ for i, (k1, k2) in enumerate(zip(keys1[:10], keys2[:10]), start=1):
 # Music is popular for the App Store, but not much so on Google Play. Same for Reference, Weather, and Shopping apps.
 # However, the Photo & Video and Travel genres from the App Store show promise. Video Players, Photography, and Travel and Local apps are all popular on Google Play.
 # 
-# In light of this analysis, it is recommended to develop a **travel / local**, as this is likely to be profitable in both markets. The app could show users upcoming events that are happening in their area. It could add features such as a map to show popular events within a radius from their current location, possibly even tying in travel/drive/flight durations. This would also easily enable revenue from ads as they could be seemlessly tied in for nearby food and drink.
+# In light of this analysis, it is recommended to develop a **Travel app**, as this is likely to be profitable in both markets. It is popular on both platforms *and* is a less saturated genre than the others, as seen in the earlier analysis showing which genres contain the most apps.
+# 
+# The app could show users upcoming events that are happening in their area. It could add features such as a map to show popular events within a radius from their current location, possibly even tying in travel/drive/flight durations. This would also easily enable revenue from ads as they could be seemlessly tied in for nearby food and drink.
 
-# In[ ]:
-
-
-
-
-
-# In[14]:
+# In[28]:
 
 
 import nbformat
