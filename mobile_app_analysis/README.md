@@ -1,6 +1,6 @@
 # Mobile App Market Analysis: Google Play vs. App Store
 
-This project analyzes mobile app data from both the Google Play Store and the Apple App Store.  
+This project analyzes mobile app data from both the Google Play Store and the Apple App Store, focusing on free apps for an English-speaking audience.  
 The goal is to clean, explore, and compare datasets from the two major platforms to identify trends and ultimately recommend app genres likely to succeed across both markets.  
 
 ---
