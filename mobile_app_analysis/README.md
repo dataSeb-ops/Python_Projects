@@ -8,17 +8,18 @@ The goal is to clean, explore, and compare datasets from the two major platforms
 ## 📊 Dataset Sources
 
 - **Google Play Store Apps Dataset (Kaggle)**  
-  [Link](https://www.kaggle.com/datasets/lava18/google-play-store-apps)  
+  [Google Play Store Apps dataset](https://www.kaggle.com/datasets/lava18/google-play-store-apps)  
   Contains metadata for apps in the Google Play store, including ratings, installs, reviews, size, category, and pricing.
 
 - **Apple App Store Apps Dataset (Kaggle)**  
-  [Link](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps)  
+  [Mobile App Store dataset](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps)  
   Contains metadata for iOS apps, including ratings, reviews, category, and pricing.
 
 ---
 
 ## 🗂 Project Structure
 
+```
 mobile_app_analysis/
 │
 ├── data_raw/ # CSVs with raw data
@@ -28,7 +29,7 @@ mobile_app_analysis/
 ├── mobile_app_analysis.ipynb # Jupyter notebook with full analysis
 ├── mobile_app_analysis.py # Python script alternative to Jupyter notebook
 └── README.md
-
+```
 
 ---
 
@@ -50,15 +51,14 @@ mobile_app_analysis/
 
 ## 📈 Key Findings
 
-- **User Behavior:** Free apps dominate both stores, but paid apps on iOS are relatively more common.  
-- **Ratings & Engagement:** Genres like *Games* and *Entertainment* draw the highest number of installs/reviews.  
-- **Cross-Platform Trend:** Genres such as *Productivity* and *Lifestyle* maintain steady popularity across both stores, suggesting good long-term viability.  
+- **Most Common Genres:** Apps designed for fun and entertainment dominate the App Store, while Google Play shows a more balanced landscape of both practical and fun apps.  
+- **Cross-Platform Trend:** Genres such as *Photography*, *Travel*, *Social*, and *Games* maintain steady popularity across both stores, suggesting good long-term viability.  
 
 ---
 
 ## ✅ Recommendation
 
-Based on trends in both datasets, the **“Lifestyle / Productivity”** genre shows strong engagement and consistent ratings on both iOS and Android.  
+Based on trends in both datasets, the **Travel** genre shows strong engagement and consistent ratings on both iOS and Android while being less saturated than some of the other categories like Social or Photography.  
 This makes it a promising category for developers seeking cross-platform success.  
 
 ---
@@ -67,7 +67,7 @@ This makes it a promising category for developers seeking cross-platform success
 
 - Include financial performance (e.g., in-app purchases, revenue if data available).  
 - Expand analysis to newer datasets (post-2023).  
-- Explore regional breakdowns to see if preferences differ by market.  
+- Explore regional breakdowns to see if preferences differ by demographic, and if developers could target a more narrow audience.  
 
 ---
 
@@ -77,8 +77,8 @@ This makes it a promising category for developers seeking cross-platform success
    ```bash
    git clone https://github.com/dataSeb-ops/Python_Projects/mobile-app-analysis.git
 2. To run the analysis, either
-   - Open mobile_app_analysis.ipynb in Jupyter and run all cells, **OR**
-   - Execute the Python script mobile_app_analysis.py using your preferred method
+   - Open *mobile_app_analysis.ipynb* in Jupyter and run all cells, **OR**
+   - Execute the Python script *mobile_app_analysis.py* using your preferred method
 
 ___
   
