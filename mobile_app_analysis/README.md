@@ -75,10 +75,10 @@ This makes it a promising category for developers seeking cross-platform success
 
 *The project is available both as a Jupyter notebook (`.ipynb`) and as a Python script (`.py`) for accessibility.*
 
-1. Clone this repo:  
+1. Clone this repo and move the corresponding subfolder:  
    ```bash
    git clone https://github.com/dataSeb-ops/Python_Projects.git
-   cd mobile-app-analysis
+   cd Python_Projects/mobile_app_analysis
    
 2. To run the analysis, either
    - Open *mobile_app_analysis.ipynb* in Jupyter and run all cells, **OR**
