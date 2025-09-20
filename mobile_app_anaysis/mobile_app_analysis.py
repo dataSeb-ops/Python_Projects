@@ -386,4 +386,33 @@ for i, (k1, k2) in enumerate(zip(keys1[:10], keys2[:10]), start=1):
 # 
 # In light of this analysis, it is recommended to develop a **travel / local**, as this is likely to be profitable in both markets. The app could show users upcoming events that are happening in their area. It could add features such as a map to show popular events within a radius from their current location, possibly even tying in travel/drive/flight durations. This would also easily enable revenue from ads as they could be seemlessly tied in for nearby food and drink.
 
+# In[ ]:
+
+
+
+
+
+# In[21]:
+
+
+import nbformat
+from nbconvert import PythonExporter
+
+# Replace with your notebook filename
+notebook_filename = 'app_data.ipynb'
+script_filename = 'app_data.py'
+
+# Load the notebook
+with open(notebook_filename, 'r', encoding='utf-8') as f:
+    nb = nbformat.read(f, as_version=4)
+
+# Convert to Python script
+exporter = PythonExporter()
+source, _ = exporter.from_notebook_node(nb)
+
+# Save to .py file
+with open(script_filename, 'w', encoding='utf-8') as f:
+    f.write(source)
+
+print(f"Saved Python script as {script_filename}")
 
