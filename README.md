@@ -25,7 +25,7 @@ This repo is a portfolio showcase of my Python data analysis skills, demonstrati
 
 **Description:**  
 Cleaned and compared datasets from Google Play and the Apple App Store to identify cross-platform app trends.  
-Explored ratings, reviews, and categories to recommend app genres with strong potential on both markets.  
+Explored ratings, engagement, and categories to recommend app genres with strong potential on both markets.  
 
 **Skills Highlighted:**  
 - Data cleaning and transformation in **pandas**  
