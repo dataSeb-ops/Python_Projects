@@ -34,8 +34,8 @@ Explored ratings, reviews, and categories to recommend app genres with strong po
 - Cross-dataset normalization and comparison  
 
 **Key Findings:**  
-- Free apps dominate both platforms, though paid apps are more common on iOS.  
-- Games and Entertainment lead in popularity, but **Lifestyle/Productivity** apps show consistent success across both stores.  
+- Genres like *Social*, *Games*, *Travel*, and Photography** maintain steady popularity across both stores.
+- However, *Travel* is a less saturated genre, so it may offer developers a better chance to introduce an app that is popular in both markets.
 
 ---
 
