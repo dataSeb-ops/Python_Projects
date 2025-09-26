@@ -26,6 +26,9 @@ mobile_app_analysis/
 │ ├── googleplaystore.csv
 │ ├── AppleStore.csv
 │
+├── results/ # results of analysis
+│ ├── genres_by_popularity.png # shows top ten genres from App Store and Google Play
+│
 ├── mobile_app_analysis.ipynb # Jupyter notebook with full analysis
 ├── mobile_app_analysis.py # Python script alternative to Jupyter notebook
 └── README.md
