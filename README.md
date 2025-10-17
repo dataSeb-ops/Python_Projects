@@ -39,6 +39,12 @@ Explored ratings, engagement, and categories to recommend app genres with strong
 
 ---
 
+### 🔹 Current Project: eBay Car Listings Analysis
+⚠️ This project is still underway, so its repo is limited for now ⚠️
+This project explores a Kaggle dataset of car listing on Germany's eBay website. It cleans the data and analyzes it by brand, considering mileage, price, and other factors.
+
+---
+
 ### 🔹 [Other Python Projects Coming Soon]  
 (Additional projects will be added here. Each will have its own subfolder with notebooks, scripts, and results.)  
 
